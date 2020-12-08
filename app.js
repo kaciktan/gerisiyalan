@@ -154,17 +154,22 @@ function MusteriUpdate() {
         }
         else{
             if(dukkan.musteriSayi>0){
+
                 if(dukkan.popularite>0.2){
-                    dukkan.popularite-= dukkan.musteriSayi /50;
-                }else{
-                    dukkan.popularite=0.19;
-                }      
+                    dukkan.popularite-= dukkan.musteriSayi / 50;
+                }
+
             }     
             break;
         }
     }
     if(dukkan.musteriSayi<0){
         dukkan.musteriSayi=0;
+    }
+
+    if(dukkan.popularite<0.2){
+        alert("iflas Ettiniz");
+        location.reload();
     }
 }
 
