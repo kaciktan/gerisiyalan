@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>ABC Tantuni Salonu</title>
+</head>
+<body style="background-color: #d7d7d7;">
+
+    <div class="container" style="background-color: white;">
+        <div class="row" style="height: 100vh;">
+            <div class="col-sm-4 align-self-center text-center" id="gameArea">
+            <img src="images/tamtam.png" id="tantuniResim" width="250px" height="250px">
+            </div>
+
+            <div class="col-sm" id="gameMenu">
+                <div class="row">
+                    <div class="col text-center">TARİH : <i class="float-left" id="txtTarih">SİFTAH BEKLİYOR</i><br>
+                    <input type="button" value="BİSMİLLAH" id="btnBasla"> <input type="button" value="İFLAS ETTİM" id="btnBitir"></div>
+                </div>
+
+                
+                <div class="row">
+                    <div class="col">
+                        <table>
+                            <tr>
+                                <td>Mevcut Tantuni : </td>
+                                <td><span id="txtMevcutTantuni">0</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Müşteri Sayısı : </td>
+                                <td><span id="txtMusteriSayi">0</span></td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>Masa Sayısı : </td>
+                                <td><span id="txtMasaSayi">8</span> <input type="button" value="Masa Satın AL (10 TL)" id="btnMasaAl"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Popülarite : </td>
+                                <td><span id="txtPopularite">0</span></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <hr>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <table>
+                            <tr>
+                                <td>Tantuni Fiyat : </td>
+                                <td><input type="number" minlength="1" min="1" id="txtBirimFiyat"> (200gr Et)</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Mevcut Et  : </td>
+                                <td><span id="txtMevcutEt"></span></td>
+                            </tr>
+
+
+                            <tr>
+                                <td>KG Et Fiyatı : </td>
+                                <td><span id="txtKGEtFiyat">50</span> <input type="button"  id= "btnEtAl" value="ET SATIN AL"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Kasadaki Para : </td>
+                                <td><span id="txtKasa">0</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
